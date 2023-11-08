@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">EsJumbo</string>
+    <string name="back_button">Kembali</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="next">Lanjut</string>
+    <string name="cancel">Batal</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="lemon">Lemon</string>
+    <string name="natural">Original</string>
+    <string name="milk">Milk</string>
+    <string name="Lychee">Leci</string>
+    <string name="order_summary"> Ringkasan Order</string>
+    <string name="send">Send Order to Another App</string>
+    <string name="quantity">Jumlah order</string>
+    <string name="flavors">Rasa</string>
+    <string name="subtotal_price">Subtotal: %s</string>
+    <string name="total_price">Total %s</string>
+
+</resources>
