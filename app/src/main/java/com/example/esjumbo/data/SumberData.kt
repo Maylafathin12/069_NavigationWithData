@@ -8,6 +8,6 @@ object SumberData {
         R.string.vanilla,
         R.string.lemon,
         R.string.milk,
-        R.string.Lychee
+        R.string.Lychee,
     )
 }

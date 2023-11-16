@@ -15,5 +15,6 @@
     <string name="flavors">Rasa</string>
     <string name="subtotal_price">Subtotal: %s</string>
     <string name="total_price">Total %s</string>
+    <string name="btn_next">button</string>
 
 </resources>
