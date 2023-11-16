@@ -16,5 +16,6 @@
     <string name="subtotal_price">Subtotal: %s</string>
     <string name="total_price">Total %s</string>
     <string name="btn_next">button</string>
+    <string name="btn_selanjutnya">Selanjutnya</string>
 
 </resources>

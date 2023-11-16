@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -27,7 +28,7 @@ import com.example.esjumbo.ui.theme.EsJumboTheme
 
 @Composable
 fun HalamanHome (
-    onNextButtonClicked: () -> Unit
+    onNextButtonClicked: () -> Unit,
 ) {
     val image = painterResource(id = R.drawable.esteh)
     Column(
@@ -40,7 +41,7 @@ fun HalamanHome (
             ),
             border = BorderStroke(1.dp, Color.Black), modifier = Modifier
                 .fillMaxWidth(0.95f)
-                .padding(vertical = 50.dp)
+                .padding(vertical = 20.dp)
                 .align(Alignment.CenterHorizontally)
         ) {
             Column(
@@ -51,7 +52,10 @@ fun HalamanHome (
                 Image(
                     painter = image,
                     contentDescription = null,
-                    contentScale = ContentScale.Crop
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(width = 200.dp, height = 300.dp) // Adjust the size as needed
+                        .align(Alignment.CenterHorizontally)
                 )
                 Text(
                     text = "Es Teh Jumbo",

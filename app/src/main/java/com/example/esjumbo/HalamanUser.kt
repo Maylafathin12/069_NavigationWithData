@@ -74,14 +74,14 @@ fun HalamanUser(
                 .padding(dimensionResource(R.dimen.padding_medium))
                 .weight(1f, false),
             horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
-            verticalAlignment = Alignment.Bottom
+            verticalAlignment = Alignment.CenterVertically
         ){
             OutlinedButton(onClick = onCancelButtonClick
             ) {
                 Text(stringResource(id = R.string.cancel))
             }
             Button(onClick = { onSubmitButtonClick(ListDataTxt) }) {
-                Text(stringResource(id = R.string.btn_next));
+                Text(stringResource(id = R.string.btn_selanjutnya));
             }
         }
     }
