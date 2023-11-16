@@ -1,6 +1,5 @@
-package com.example.esjumbo.ui.theme
+package com.example.esjumbo
 
-import android.graphics.Paint.Align
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -24,15 +23,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.esjumbo.R
+import com.example.esjumbo.ui.theme.EsJumboTheme
 
 @Composable
 fun HalamanHome (
-    onNextButtonClicked: () -> Unit)
-{
+    onNextButtonClicked: () -> Unit
+) {
     val image = painterResource(id = R.drawable.esteh)
-    Column(modifier = Modifier,
-        verticalArrangement = Arrangement.SpaceBetween){
+    Column(
+        modifier = Modifier,
+        verticalArrangement = Arrangement.SpaceBetween
+    ) {
         OutlinedCard(
             colors = CardDefaults.cardColors(
                 containerColor = MaterialTheme.colorScheme.surface,
@@ -40,11 +41,13 @@ fun HalamanHome (
             border = BorderStroke(1.dp, Color.Black), modifier = Modifier
                 .fillMaxWidth(0.95f)
                 .padding(vertical = 50.dp)
-                .align(Alignment.CenterHorizontally)) {
+                .align(Alignment.CenterHorizontally)
+        ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
-                    .align(Alignment.CenterHorizontally)) {
+                    .align(Alignment.CenterHorizontally)
+            ) {
                 Image(
                     painter = image,
                     contentDescription = null,
@@ -60,13 +63,13 @@ fun HalamanHome (
                 Text(
                     text = "Kalimantan",
                     color = Color.DarkGray,
-                    fontSize = 35.sp,
+                    fontSize = 50.sp,
                     modifier = Modifier
                         .align(Alignment.CenterHorizontally)
                 )
             }
         }
-        Row (
+        Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(dimensionResource(R.dimen.padding_medium))
@@ -82,13 +85,14 @@ fun HalamanHome (
             }
         }
     }
-    @Preview(showBackground = true)
-    @Composable
-            fun PreviewHalamanHome(){
-                EsJumboTheme {
-                    HalamanHome (
-                    onNextButtonClicked = {}
-                    )
-                }
-            }
 }
+@Preview(showBackground = true)
+@Composable
+fun PreviewHalamanHome(){
+    EsJumboTheme {
+        HalamanHome (
+            onNextButtonClicked = {}
+        )
+    }
+}
+
